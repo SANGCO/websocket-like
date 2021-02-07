@@ -21,6 +21,6 @@ function disconnect() {
 
 function sendEvent(){
     if (stompClient != null) {
-    stompClient.send("/topic/message", {}, "Hello, STOMP");
+    stompClient.send("/app/like", {}, "Hello, STOMP");
     }
 }
